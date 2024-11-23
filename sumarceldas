@@ -1,0 +1,7 @@
+Function SumarColor(color As Range, Rango As Range) As Double
+Dim celda As Range
+For Each celda In Rango
+If celda.Interior.ColorIndex = color.Cells(1, 1).Interior.ColorIndex Then SumarColor + celda
+Next celda
+Set celda = Nothing
+End Function
